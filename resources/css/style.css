@@ -1,0 +1,47 @@
+
+
+
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  padding: 0 1.5rem;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 95%;
+  height: 4rem;
+  border-bottom: 1px solid grey;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+header span {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+em {
+  font-weight: bolder;
+  color: black;
+}
+
+a {
+  color: grey;
+}
+
+ul li {
+  display: inline;
+  justify-content: center;
+  padding-left: 1rem;
+}
