@@ -11,7 +11,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h5 {
   color: dimgrey;
 }
 
@@ -91,7 +92,7 @@ h1 {
 
 h3 {
   font-size: 1.75rem;
-  font-weight: normal;
+  font-weight: bold;
   color: dimgrey;
 }
 
@@ -146,11 +147,11 @@ article {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* border: 1px solid grey; Helped me figure out the container. */
+/*  border: 1px solid grey; Helped me figure out the container. */
   padding-right: 2rem;
 }
 
-.littlebox img {
+aside img {
   width: 9.45rem;   /* 35% of 432px width */
 }
 
@@ -161,6 +162,7 @@ article {
 
 h2 {
   font-size: 2.25rem;
+  font-weight: bold;
   padding-bottom: 1.5rem;
 }
 
@@ -188,11 +190,52 @@ h6 {
 }
 
 
+/* Start Learning Section" */
 
+banner {
+  display: block;
+  justify-content: center;
+  background-color: lightgrey;
+}
 
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
 
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+.course {
+  display: block;
+  justify-content: flex-start;
+  border: 1px solid grey;
+  background-color: white;
+  margin: 0rem 1rem 2rem 1rem;
+  width: 27%
+}
 
+.course img {
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+
+.course h3 {
+  padding: 0rem 1rem;
+}
+
+.course h5 {
+  padding: 0rem 1rem 1.5rem 1rem;
+}
+
+h4 {
+  color: dimgrey;
+  padding: 0.5rem 1rem;
+}
 
 
 
