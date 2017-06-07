@@ -132,13 +132,13 @@ article {
   width: 45rem;
 }
 
-.box1 {
+.boxleft {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.box2 {
+.boxright {
   display: flex;
   flex-direction: column;
 }
@@ -163,12 +163,11 @@ aside img {
 h2 {
   font-size: 2.25rem;
   font-weight: bold;
-  padding-bottom: 1.5rem;
 }
 
 p {
   font-size: 1rem;
-  padding-bottom: 1.5rem;
+  padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
 h5 {
@@ -208,6 +207,7 @@ banner {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 2rem;
 }
 
 .course {
@@ -238,11 +238,17 @@ h4 {
 }
 
 
+/* Thesis Section" */
 
 
+banner video {
+  padding: 2rem 1.5rem;
+  width: 45rem;
+}
 
-
-
+.thesis {
+  background-color: white;
+}
 
 
 /* Footer Section" */
