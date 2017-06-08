@@ -40,7 +40,6 @@
 body {
   font-size: 16px;
   line-height: 1.5;
-  padding: 0 1.5rem;
   font-family: 'Muli', sans-serif;
   color: #3d0a68;  /* This is a dark purple. */
 }
@@ -65,6 +64,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
+  padding-left: 1.5rem;
 }
 
 header span {
@@ -96,6 +96,31 @@ nav a:hover {
   font-weight: bold;
   transition: all 300ms ease-in-out 150ms;
 }
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    display: none;
+  }
+
+.mobile {
+    display: inline;
+    background-color: white;
+    height: 4rem;
+    border-bottom: 1px solid #edd244;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+  }
+}
+
 
 /* Learn Somthing New Section */
 
@@ -137,7 +162,6 @@ main a {
   color: white;
   font-weight: lighter;
   padding: 0.5rem 8rem;
-  border: 1 solid grey;
   background-color: #3d0a68;
 }
 
@@ -145,6 +169,24 @@ main a {
   background-color: #edd244;    /* Started with color 'gold' but it was too bright. */
   color: #3d0a68;
   transition: all 250ms ease-in 400ms;
+}
+
+
+@media only screen and (max-width: 500px) {
+  main {
+    height: auto;
+  }
+
+  main img {
+    display: none;
+  }
+
+  .text_container {
+    padding: 2rem 1.5rem;
+    width: 100%;
+    height: 25rem;
+    align-items: center;
+  }
 }
 
 
@@ -222,6 +264,14 @@ h6 {
   text-shadow: 1px 1px grey;
 }
 
+@media only screen and (max-width: 500px) {
+
+  .boxleft {
+    display: none;
+  }
+
+}
+
 
 /* Start Learning Section" */
 
@@ -290,6 +340,25 @@ banner video {
   background-color: white;
 }
 
+section .mobile {
+  diplay: none;
+}
+
+@media only screen and (max-width: 500px) {
+  banner .boxright {
+    display: none;
+  }
+
+  article {
+    display: none;
+  }
+
+  banner video {
+    padding: 2rem 0rem;
+    width: 100%;
+  }
+
+}
 
 /* Footer Section" */
 
@@ -305,6 +374,7 @@ footer {
 
 footer span {
   color: #3d0a68;
+  padding-left: 1.5rem;
 }
 
 .links {
@@ -317,8 +387,8 @@ ul li {
   padding-left: 1rem;
 }
 
-@media only screen and (max-width: 450px) {
-
-
-
+@media only screen and (max-width: 500px) {
+  footer .links {
+    display: none;
+  }
 }
