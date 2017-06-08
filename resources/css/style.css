@@ -1,20 +1,52 @@
 
+/*   font-family: 'Muli', sans-serif;
+     font-family: 'Titillium Web', sans-serif; - included in the html for fun. */
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v10/zscZFkjVRGyfQ_Pw-5exXPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Muli Italic'), local('Muli-Italic'), url(https://fonts.gstatic.com/s/muli/v10/YxNEAWILjDc466nftZdqXuvvDin1pK8aKteLpeZ5c0A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Muli SemiBold'), local('Muli-SemiBold'), url(https://fonts.gstatic.com/s/muli/v10/UfnYe1HdWn9oxI4EauRTFgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Muli Bold'), local('Muli-Bold'), url(https://fonts.gstatic.com/s/muli/v10/4CQLgXecGZ8f_sbf4m6a6gLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 
 
 
 body {
   font-size: 16px;
-  font-family: sans-serif;
   line-height: 1.5;
   padding: 0 1.5rem;
+  font-family: 'Muli', sans-serif;
+  color: #3d0a68;  /* This is a dark purple. */
 }
 
-h1,
-h2,
-h3,
-h5 {
-  color: dimgrey;
-}
+
+
 
 /* Header Section "Decided to make it fixed." */
 
@@ -27,7 +59,7 @@ header {
   width: 100%;
   background-color: white;
   height: 4rem;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #edd244;
 }
 
 .logo {
@@ -41,12 +73,12 @@ header span {
 }
 
 em {
-  font-weight: bolder;
+  font-weight: bold;
   color: black;
 }
 
 a {
-  color: grey;
+  color: purple;
 }
 
 .links {
@@ -57,6 +89,12 @@ ul li {
   display: inline;
   justify-content: center;
   padding-left: 1rem;
+}
+
+nav a:hover {
+  color: black;
+  font-weight: bold;
+  transition: all 300ms ease-in-out 150ms;
 }
 
 /* Learn Somthing New Section */
@@ -87,34 +125,28 @@ main img {
 h1 {
   font-size: 3rem;
   font-weight: bold;
-  color: dimgrey;
 }
 
 h3 {
   font-size: 1.75rem;
   font-weight: bold;
-  color: dimgrey;
-}
-
-.text_container h5 {
-  display: flex;
-  justify-content: center;
-  padding: 0.5rem 6rem;
-  border: 1 solid grey;
-  background-color: grey;
 }
 
 main a {
   font-size: 1.25rem;
   color: white;
   font-weight: lighter;
+  padding: 0.5rem 8rem;
+  border: 1 solid grey;
+  background-color: #3d0a68;
 }
 
-
-.text_container h5:hover {
-  background-color: gold;
-  transition: color 250ms ease-in 300ms;
+.text_container a:hover {
+  background-color: #edd244;    /* Started with color 'gold' but it was too bright. */
+  color: #3d0a68;
+  transition: all 250ms ease-in 400ms;
 }
+
 
 /* Keep Practicing Section (Section Container)*/
 
@@ -147,7 +179,6 @@ article {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-/*  border: 1px solid grey; Helped me figure out the container. */
   padding-right: 2rem;
 }
 
@@ -166,7 +197,9 @@ h2 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.15rem;
+  font-family: 'Titillium Web', sans-serif;
+  font-style: italic;
   padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
@@ -185,7 +218,8 @@ h6 {
 }
 
 .details a {
-  color: blue;
+  color: #edd244;
+  text-shadow: 1px 1px grey;
 }
 
 
@@ -233,10 +267,16 @@ banner {
 }
 
 h4 {
-  color: dimgrey;
+  color: gold;
+  text-shadow: 1px 1px grey;
+  letter-spacing: 2px;
   padding: 0.5rem 1rem;
 }
 
+.course h3:hover {
+  text-shadow: 1px 0px #edd244;
+  transition: color 200ms ease-in 250ms;
+}
 
 /* Thesis Section" */
 
@@ -260,11 +300,11 @@ footer {
   width: 100%;
   background-color: white;
   height: 6rem;
-  border-top: 1px solid grey;
+  border-top: 1px solid #edd244;
 }
 
 footer span {
-  color: grey;
+  color: #3d0a68;
 }
 
 .links {
@@ -275,4 +315,10 @@ ul li {
   display: inline;
   justify-content: center;
   padding-left: 1rem;
+}
+
+@media only screen and (max-width: 450px) {
+
+
+
 }
