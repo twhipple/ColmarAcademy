@@ -5,6 +5,14 @@
 @font-face {
   font-family: 'Muli';
   font-style: normal;
+  font-weight: 300;
+  src: local('Muli Light'), local('Muli-Light'), url(https://fonts.gstatic.com/s/muli/v10/mls_29xz6YyJHsylG8hcCgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
   font-weight: 400;
   src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v10/zscZFkjVRGyfQ_Pw-5exXPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
@@ -160,7 +168,7 @@ h3 {
 main a {
   font-size: 1.25rem;
   color: white;
-  font-weight: lighter;
+  font-weight: 300;
   padding: 0.5rem 8rem;
   background-color: #3d0a68;
 }
@@ -174,19 +182,21 @@ main a {
 
 @media only screen and (max-width: 500px) {
   main {
-    height: auto;
+    display: block;
   }
 
   main img {
-    display: none;
+    width: 100%;
+    padding: 0rem;
   }
 
   .text_container {
-    padding: 2rem 1.5rem;
+    padding: 2rem;
+    display: block;
     width: 100%;
-    height: 25rem;
     align-items: center;
   }
+
 }
 
 
@@ -287,7 +297,7 @@ banner {
   padding-top: 2rem;
 }
 
-.main_container {
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -327,6 +337,47 @@ h4 {
   text-shadow: 1px 0px #edd244;
   transition: color 200ms ease-in 250ms;
 }
+
+.cell {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+
+  banner {
+    background-color: white;
+  }
+
+  .container {
+    display: inline-block;
+    justify-content: center;
+    padding-right: 2rem;
+  }
+
+  .course {
+    width: 100%;
+    margin: 0rem 1rem 1rem 2rem;
+    background-color: lightgrey;
+  }
+
+  .course h3 {
+    padding: 1.5rem;
+  }
+
+  .course img {
+    display: none;
+  }
+
+  .course h4 {
+    display: none;
+  }
+
+  .course h5 {
+    display: none;
+  }
+}
+
+
 
 /* Thesis Section" */
 
