@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Colmar Academy</title>
   <link rel="icon" href="resources/images/favicon (3).ico" type="image/x-icon">
+    <!-- NOTE: I put one font here in the HTML and the other in the CSS file.-->
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300i,400,400i,600i,700" rel="stylesheet">
   <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
   <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
@@ -12,16 +13,16 @@
 
 <body>
 
-  <!--Header Section-->
+<!--Header Section-->
 
   <header>
     <nav class="logo">
-      <img src="./resources/images/ic-logo.svg" alt="logo">
+      <img src="./resources/images/ic-logo.svg" alt="Colmar Logo">
       <span><a href="./index.html"><em>Colmar</em>Academy</a></span>
     </nav>
 
     <nav class="links">
-      <ul>
+      <ul role="presentation">
         <li><a href="#campus">On campus</a></li>
         <li><a href="#online">Online</a></li>
         <li><a href="#business">For companies</a></li>
@@ -34,20 +35,20 @@
   <header class="mobile">
     <nav class="links">
       <ul>
-        <li><a href="#"> <img src="./resources/images/ic-logo.svg" alt=""> </a></li>
-        <li><a href="#campus"> <img src="resources/images/ic-on-campus.svg" alt=""> </a></li>
-        <li><a href="#online"> <img src="resources/images/ic-online.svg" alt=""> </a></li>
-        <li><a href="#login"> <img src="resources/images/ic-login.svg" alt=""> </a></li>
+        <li><a href="#"> <img src="./resources/images/ic-logo.svg" alt="Colmar Logo"> </a></li>
+        <li><a href="#campus"> <img src="resources/images/ic-on-campus.svg" alt="On Campus"> </a></li>
+        <li><a href="#online"> <img src="resources/images/ic-online.svg" alt="Online"> </a></li>
+        <li><a href="#login"> <img src="resources/images/ic-login.svg" alt="Login"> </a></li>
       </ul>
     </nav>
   </header>
 
 
-  <!--Learn Somthing New Section (Main Container) -->
+<!--Learn Somthing New Section (Main Container) -->
 
 
   <main>
-    <img src="resources/images/banner.jpg" alt="">
+    <img src="resources/images/banner.jpg" alt="Students learning">
     <div class="learn_container">
       <h1>Learn something new everyday</h1>
       <h3>Reinvent yourself and discover a world of possibilities.</h3>
@@ -58,14 +59,16 @@
   </main>
 
 
-  <!--Keep Practicing Section (Section Container)-->
+<!--Keep Practicing Section (Section Container)-->
 
   <section>
 
     <div class="imagebox">
-      <img src="resources/images/information-main.jpg" alt="">
+      <!-- NOTE: I believe the width of the image here is keeping the container from flexing. -->
+      <img src="resources/images/information-main.jpg" alt="A man reading">
       <article class="">
         <h2>It doesn't hurt to keep practicing</h2>
+      <!-- NOTE: Is there another way to apply regular (double) quote marks? -->
         <p>&quotCurabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.&quot</p>
         <h6>Emanuel, Sr Strategist at Hiring.com</h6>
       </article>
@@ -73,7 +76,7 @@
 
     <aside class="infobox">
       <div class="picturebox">
-        <img src="resources/images/information-orientation.jpg" alt="">
+        <img src="resources/images/information-orientation.jpg" alt="People hiking">
         <div class="details">
           <h3>Orientation date</h3>
           <h5>Tue 10/11 & Wed 10/12: 8am-3pm</h5>
@@ -82,7 +85,7 @@
         </div>
       </div>
       <div class="picturebox">
-        <img src="resources/images/information-campus.jpg" alt="">
+        <img src="resources/images/information-campus.jpg" alt="Colmar campus photo">
         <div class="details">
           <h3>Our campus</h3>
           <h5>Find which campus is close to you</h5>
@@ -91,7 +94,7 @@
         </div>
       </div>
       <div class="picturebox">
-        <img src="resources/images/information-guest-lecture.jpg" alt="">
+        <img src="resources/images/information-guest-lecture.jpg" alt="Oliver Sack photo">
         <div class="details">
           <h3>Our guest lecture</h3>
           <h5>Join a keynote with Oliver Sack about music in medical treatment</h5>
@@ -101,9 +104,10 @@
       </div>
     </aside>
 
+      <!-- NOTE: Couldn't figure out how to add mobile images without re-writing the code below. -->
     <aside class="mobilepics">
       <div class="picturebox">
-        <img src="resources/images/information-orientation-mobile.jpg" alt="">
+        <img src="resources/images/information-orientation-mobile.jpg" alt="People hiking">
         <div class="details">
           <h3>Orientation date</h3>
           <h5>Tue 10/11 & Wed 10/12: 8am-3pm</h5>
@@ -111,7 +115,7 @@
         </div>
       </div>
       <div class="picturebox">
-        <img src="resources/images/information-campus-mobile.jpg" alt="">
+        <img src="resources/images/information-campus-mobile.jpg" alt="Colmar campus photo">
         <div class="details">
           <h3>Our campus</h3>
           <h5>Find which campus is close to you</h5>
@@ -119,7 +123,7 @@
         </div>
       </div>
       <div class="picturebox">
-        <img src="resources/images/information-guest-lecture-mobile.jpg" alt="">
+        <img src="resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack photo">
         <div class="details">
           <h3>Our guest lecture</h3>
           <h5>Join a keynote with Oliver Sack</h5>
@@ -131,47 +135,47 @@
   </section>
 
 
-  <!--Start Learning Section-->
+<!--Start Learning Section-->
 
   <banner>
     <div class="title">
       <h2>Start learning</h2>
     </div>
 
-    <div class="container">
+    <div class="container" aria-label="Courses available at Colmar.">
 
         <div class="course">
-          <img src="resources/images/course-software.jpg" alt="">
+          <img src="resources/images/course-software.jpg" alt="Computer picture">
           <h3>Software engineering</h3>
           <h4>COURSES</h4>
           <h5>Web Developtment, Mobile Development, iOT, APIs</h5>
         </div>
         <div class="course">
-          <img src="resources/images/course-computer-art.jpg" alt="">
+          <img src="resources/images/course-computer-art.jpg" alt="Cellphone picture">
           <h3>Computer art</h3>
           <h4>COURSES</h4>
           <h5>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h5>
         </div>
         <div class="course">
-          <img src="resources/images/course-design.jpg" alt="">
+          <img src="resources/images/course-design.jpg" alt="Picture of a camera">
           <h3>Design</h3>
           <h4>COURSES</h4>
           <h5>User Experience Design, User Research, Visual Design</h5>
         </div>
         <div class="course">
-          <img src="resources/images/course-data.jpg" alt="">
+          <img src="resources/images/course-data.jpg" alt="Picture of random data">
           <h3>Data</h3>
           <h4>COURSES</h4>
           <h5>Data Science, Big Data, SQL, Data Visualization</h5>
         </div>
         <div class="course">
-          <img src="resources/images/course-business.jpg" alt="">
+          <img src="resources/images/course-business.jpg" alt="Chess game picture">
           <h3>Business</h3>
           <h4>COURSES</h4>
           <h5>Product Development, Business Development, Startup</h5>
         </div>
         <div class="course">
-          <img src="resources/images/course-marketing.jpg" alt="">
+          <img src="resources/images/course-marketing.jpg" alt="Smartphone watch picture">
           <h3>Marketing</h3>
           <h4>COURSES</h4>
           <h5>Analytics, Content Marketing, Mobile Marketing</h5>
@@ -182,7 +186,7 @@
   </banner>
 
 
-  <!--Thesis Exhibit Section-->
+<!--Thesis Exhibit Section-->
 
   <banner class="thesis">
 
@@ -193,6 +197,8 @@
     <section>
 
       <div class="imagebox">
+        <!-- NOTE: The poster image wasn't working so I made and included my own. Apparently
+             JavaScript is needed to make it play from the actual poster image which I couldn't figure out. -->
         <video
           src="resources/videos/thesis.mp4" controls poster="resources/images/videoplayericon.jpg">
         </video>
@@ -205,7 +211,7 @@
       <aside class="infobox">
 
         <div class="picturebox">
-          <img src="resources/images/thesis-fisma.jpg" alt="">
+          <img src="resources/images/thesis-fisma.jpg" alt="Sketching with pencil and paper">
           <div class="details">
             <h3>Fisma: Design and Something else</h3>
             <h5>Designer showcase of new prototype product</h5>
@@ -213,7 +219,7 @@
           </div>
         </div>
         <div class="picturebox">
-          <img src="resources/images/thesis-now-and-then.jpg" alt="">
+          <img src="resources/images/thesis-now-and-then.jpg" alt="Skyline photo">
           <div class="details">
             <h3>Now and then</h3>
             <h5>Research study about New York</h5>
@@ -226,6 +232,7 @@
     </section>
 
     <section class="mobile">
+      <!-- NOTE: I decided to make the video with controls for large screen but autoloop for mobile version. -->
       <video
         src="resources/videos/thesis.mp4" autoplay loop mute poster="resources/images/videoplayericon.jpg">
       </video>
@@ -235,21 +242,19 @@
 
 
 
-  <!--Footer Section-->
+<!--Footer Section-->
 
   <footer>
     <div>
       <span>&copy 2016 Colmar Academy. All rights reserved</span>
     </div>
     <nav class="links">
-      <ul>
+      <ul role="presentation">
         <li><a href="#terms">Terms</a></li>
         <li><a href="#privacy">Privacy</a></li>
       </ul>
     </nav>
   </footer>
-
-
 
 
 </body>
